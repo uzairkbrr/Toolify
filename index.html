@@ -8,9 +8,14 @@
 </head>
 <body class="mx-auto">
 
-  <main class="main">
+  <main class="main relative overflow-hidden">
     <navbar class="nav flex justify-between align-center mx-auto large-container px-30">
       <a href="#"><img src="Images/brand-logo.png" alt="Brand Logo"></a>
+
+      <label class="hamburger-menu-label hidden flex-col cursorPointer">
+        <input type="checkbox" id="hamburger-menu" class="hamburger-menu-checkbox"/>
+      </label>
+
 
       <ul class="nav-links-list flex justify-between align-center">
         <li class="nav-link link-text cursor-pointer capitalize"><a href="#" class="relative">widgets</a></li>
@@ -24,8 +29,12 @@
       </div>
     </navbar>
 
+
     <section class="header">
-      <div class="medium-container my-200 mx-auto px-30">
+      <div class="medium-container my-200 mx-auto px-30 relative">
+
+        <div class="header-bg-shape shape-small shape-blue rounded-full blur absolute"></div>
+
         <h1 class="h1 header-heading_text">Use best 
           <span class="header-heading highlighted-text">online widgets</span>
           without any hassel.
@@ -39,6 +48,12 @@
 
     <section class="widgets">
       <div class="medium-container relative my-200 mx-auto px-30 text-center">
+        
+        <div class="widgets-main-bg-shape shape-blue rounded-full absolute"></div>
+
+        <div class="widget-bg-shape-blue shape-small shape-blue rounded-full blur absolute"></div>
+        <div class="widget-bg-shape-orange shape-small shape-orange rounded-full blur absolute"></div>
+ 
         <div class="blur-bg-container">
 
           <div class="widgets-icon widgets-icon1 absolute"></div>
@@ -78,13 +93,21 @@
       </div>
     </section>
 
-    <section class="tools">
-      <div class="medium-container my-200 mx-auto px-30 text-center">
+    <section class="tools relative">
+
+      <div class="tools-main-bg-shape shape-small shape-orange rounded-full absolute"></div>
+
+
+      <div class="medium-container my-200 mx-auto px-30 text-center relative">
+
+        <div class="tools-bg-shape-blue-top shape-small shape-blue rounded-full blur absolute"></div>
+        <div class="tools-bg-shape-blue-bottom shape-small shape-blue rounded-full blur absolute"></div>
+
         <h3 class="h3 tools-heading font-bold">Smart reposnsive tools</h3>
 
         <p class="tools-paragraph font-large font-regular">Save your time. Our widgets will help you in your daily tasks.</p>
 
-        <div class="tools-cards flex flex-wrap text-center">
+        <div class="tools-cards flex flex-wrap justify-between text-center">
           <div class="toolcard small-container">
             <h4 class="h4 font-bold mx-auto">Select the widget for your task</h4>
             <p class="tools-card-text font-small">Choose a widget to increase visitor engagement, boost conversions, generate leads, provide customer support and grow social followers.</p>
@@ -105,7 +128,10 @@
     </section>
 
     <section class="cta">
-      <div class="medium-container text-center my-200 mx-auto px-30">
+      <div class="medium-container text-center my-200 mx-auto px-30 relative">
+
+        <div class="cta-bg-shape-blue shape-small shape-blue rounded-full blur absolute"></div>
+
         <h3 class="h3 cta-heading">Join 1,078,753 customers already using Toolify</h3>
 
         <p class="cta-paragraph font-large">Get the taste of 50+ powerful apps by Toolify. Joining is free!</p>
@@ -113,25 +139,31 @@
         <button class="button secondary-button cta-button text-black border-none cursor-pointer font-medium font-bold">Get start</button>
       </div>
     </section>
+
+    <div class="cta-main-bg-shape shape-orange rounded-full absolute"></div>
   </main>
 
-  <section class="newsletter">
-    <div class="medium-container text-black text-center mx-auto px-30">
+  <section class="newsletter relative overflow-hidden">
+    <div class="medium-container text-black text-center mx-auto px-30 relative overflow-hidden">
+      
+      <div class="newsletter-bg-shape-blue shape-small shape-blue rounded-full absolute"></div>
+      
       <h2 class="h2 newsletter-heading">Newsletter</h2>
-
+      
       <p class="newsletter-paragraph font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor, in mauris bibendum commodo.</p>
-
-      <form action="#" class="relative">
-        <input type="text" placeholder="Your email address" class="font-small">
-        <input type="button" value="Subscibe" class="font-medium absolute cursor-pointer border-none">
+      
+      <form action="#" class="relative mx-auto">
+        <input type="email" placeholder="Your email address" class="font-small">
+        <input type="button" value="Subscribe" class="font-medium absolute cursor-pointer border-none">
       </form>
-
     </div>
+    
+    <div class="newsletter-main-shape shape-orange rounded-full absolute"></div>
   </section>
 
   <footer class="footer">
     <div class="medium-container mx-auto px-30">
-      <div class="footer-links flex justify-between">
+      <div class="footer-links flex flex-wrap justify-between">
         <div class="footer-links">
           <h5 class="font-medium capitalize">widgets</h5>
 
@@ -182,7 +214,10 @@
           </ul>
         </div>
       </div>
+
     </div>
+    
+    <p class="p footer-copyright text-center"> Copyrights 2021 - Toolify brand </p>
   </footer>
   
 </body>
