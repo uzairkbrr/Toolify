@@ -1,6 +1,309 @@
+
+:root {
+  --primary-linear-color:linear-gradient(286.93deg, #EA4040 6.11%, #F5A52D 98.56%);
+  --primary-bg-color: linear-gradient(286.93deg, #080B44 6.11%, #1A1D60 98.56%);
+  --secondary-button-color: #F5BD2D;
+  --primary-text-color: #fff;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(fonts/gilroy/Gilroy-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(fonts/gilroy/Gilroy-SemiBold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.mx-auto {
+  margin-inline: auto;
+}
+
+.my-200 {
+  margin-block: 200px;
+}
+
+.px-30 {
+  padding-inline: 30px;
+}
+
+.large-container {
+  max-width: 1700px; /* 1640 + 60 ( for padding on small screens ) */
+}
+
+.medium-container {
+  max-width: 1424px;
+}
+
+.small-container {
+  max-width: 333px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.h1 {
+  font-size: 72px;
+  line-height: 84.38px;
+}
+
+.h2 {
+  font-size: 64px;
+  line-height: 75px;
+}
+
+.h3{
+  font-size: 56px;
+  line-height: 65.63px;
+}
+
+.h4 {
+  font-size: 28px;
+  line-height: 32.81px;
+}
+
+.font-large {
+  font-size: 30px;
+  line-height: 35.16px;
+}
+
+.capitalize {
+text-transform: capitalize;
+}
+
+.font-medium {
+  font-size: 24px;
+  line-height: 28.13px;
+}
+
+.font-small {
+  font-size: 20px;
+  line-height: 23.44px;
+}
+
+.link-text {
+  font-size: 18px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-black {
+  color: rgb(0, 0, 0 ) !important;
+}
+
+/*  buttons */
+.button {
+  padding: 9px 28px;
+  border-radius: 25px;
+  color: var(--primary-text-color);
+}
+
+.primary-button {
+  background: var(--primary-linear-color);
+}
+
+.secondary-button {
+  background-color: var(--secondary-button-color);
+}
+
+.border-none {
+  border: none;
+}
+
+.background-transparent {
+  background-color: transparent;
+}
+
+/* highlighted text */
+
+.highlighted-text {
+  background-image: var(--primary-linear-color);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Position */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+/* testing */
+
+body {
+  max-width: 1920px;
+  /* background-color: rgb(161, 161, 194); */
+}
+
+@media (max-width: 1440px) {
+  body {
+    background-color: gray;
+  }
+}
+
+/* end  ( to be deleted ) */
+
+body {
+  color: var(--primary-text-color);
+  font-family: "Gilroy";
+}
+
+.main {
+  background: var(--primary-bg-color);
+  padding-bottom: 34px;
+  /* padding-bottom: 1000px;  to be deleted */
+}
+
+/* Navbar */
+
+.nav-links-list {
+  list-style: none;
+  gap: 74px;
+}
+
+
+/* Header */
+
+.header-heading_text {
+  max-width: 790px;
+}
+
+.heading-paragraph {
+  margin: 18px auto 53px 0;
+  max-width: 1067px;
+}
+
+.heading-button {
+  padding: 18px 56px;
+  border-radius: 65px;
+}
+
+/* widgets */
+
+.widgets-paragraph {
+  max-width: 817px;
+  margin: 18px auto 84px auto;
+}
+
+.widgets-list {
+  gap: 76px 184px;
+}
+
+.widget {
+  gap: 20px;
+}
+
+.blur-bg-container {
+  padding: 100px;
+  background: linear-gradient(103.46deg, rgba(37, 37, 37, 0.28) 11.66%, rgba(84, 84, 84, 0.17) 87.59%);
+  box-shadow: 0px 0px 10px 0px #0000001A;
+  backdrop-filter: blur(10px);
+  border-radius: 32px;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+}
+
+.widgets-icon {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  top: 29px;
+}
+
+.widgets-icon1 {
+  background: var(--primary-linear-color);
+  left: 36px;
+}
+
+.widgets-icon2 {
+  background: linear-gradient(286.93deg, #11B418 6.11%, #0FD55E 98.56%);
+  left: 61px;
+}
+
+.widgets-icon3 {
+  background: linear-gradient(322.72deg, #2718CA 11.72%, #4584E1 84.11%);
+  left: 86px;
+}
+
+/* Smart Responsive Tools */
+.tools-paragraph {
+  margin: 18px auto 81px auto;
+}
+
+.tools-cards {
+  gap: 70px 149px;
+}
+
+.tools-cards .h4 {
+  max-width: 268px;
+  margin: 0 34px 18px 34px;
+}
+
+
+/* CTA */
+
+.cta-paragraph {
+  margin: 18px auto 66px auto;
+}
+
+.cta-button {
+  padding: 18px 95px;
+}
+
+/* NewsLetter */
+
+.newsletter .medium-container {
+  /* height: 300px; */
+  /* background: #080B44; */
+  padding-block: 134px;
+}
+
+.newsletter-paragraph {
+  margin: 18px auto 10px auto;
+  max-width: 709px;
+} 
