@@ -178,6 +178,11 @@ text-transform: capitalize;
   position: absolute;
 }
 
+a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
 /* testing */
 
 body {
@@ -203,6 +208,25 @@ body {
   gap: 74px;
 }
 
+.nav-links-list a {
+  padding-bottom: 2px;
+}
+
+.nav-links-list a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  transition: width 0.3s;
+}
+
+.nav-links-list a:hover:after {
+  width: 100%;
+}
 
 /* Header */
 
@@ -316,7 +340,7 @@ body {
   background-color: #000;
   color: var(--primary-text-color);
   top: 0;
-  right: 290px;
+  right: 250px;
 }
 
 /* Footer */
@@ -334,12 +358,31 @@ body {
   gap: 30px;
 }
 
-.footer-link-items a {
-  color: var(--primary-text-color);
-  text-decoration: none;
+.footer-link-items li {
+  list-style: none;
 }
 
-.footer-link-items iframe {
+.footer-link-items a {
+  padding-bottom: 2px;
+}
+
+.footer-link-items a::after {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  transition: width 0.3s;
+}
+
+.footer-link-items a:hover::after {
+  width: 100%;
+}
+
+
+.footer-link-items .google-map {
   max-width: 298px;
   height: 173px;
 }
