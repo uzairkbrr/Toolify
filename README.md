@@ -1,3 +1,5 @@
 # Tollify
 
-Live Hositing: https://toolifylp.netlify.app/
+Live Preview: https://toolifylp.netlify.app/
+
+
