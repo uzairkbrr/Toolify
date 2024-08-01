@@ -12,7 +12,7 @@
     <navbar class="nav flex justify-between align-center mx-auto large-container px-30">
       <a href="#" class="nav-brand_logo"><img src="Images/brand-logo.png" alt="Brand Logo"></a>
 
-      <input type="checkbox" id="hamburger-menu" class="hamburger-menu-checkbox"/>
+      <input type="checkbox" id="hamburger-menu" class="hamburger-menu-checkbox hidden"/>
       <label for="hamburger-menu" class="hamburger-menu-label hidden flex-col cursorPointer">
         <span class="hamburger-menu-line"></span>
         <span class="hamburger-menu-line"></span>
@@ -20,15 +20,14 @@
       </label>
 
       <div class="mobile-menu mobile-nav-links-list flex justify-between align-center">
-
         
         <ul class="nav-links-list flex justify-between align-center">
-          <li class="nav-link link-text cursor-pointer capitalize"><a href="#" class="relative">widgets</a></li>
-          <li class="nav-link link-text cursor-pointer capitalize"><a href="#" class="relative">categories</a></li>
-          <li class="nav-link link-text cursor-pointer capitalize"><a href="#" class="relative">help</a></li>
+          <li class="nav-link link-text cursor-pointer capitalize font-bold"><a href="#" class="relative">widgets</a></li>
+          <li class="nav-link link-text cursor-pointer capitalize font-bold"><a href="#" class="relative">categories</a></li>
+          <li class="nav-link link-text cursor-pointer capitalize font-bold"><a href="#" class="relative">help</a></li>
         </ul>
       
-        <p class="mobile-menu_copyright hidden">Copyrights 2021 - Toolify brand</p>
+        <p class="mobile-menu_copyright hidden text-center">Copyrights 2021 - Toolify brand</p>
       </div>
 
       <div class="nav-buttons">
@@ -54,11 +53,12 @@
       </div>
     </section>
 
-    <section class="widgets">
+    <section class="widgets relative">
+      <div class="widgets-main-shape-orange shape-small shape-orange rounded-full absolute"></div>
+
       <div class="medium-container relative my-200 mx-auto px-30 text-center">
         
         <div class="widgets-main-shape-blue shape-blue rounded-full absolute"></div>
-        <div class="widgets-main-shape-orange shape-small shape-orange rounded-full absolute"></div>
 
         <div class="widgets-bg-shape-blue shape-small shape-blue rounded-full blur absolute"></div>
         <div class="widgets-bg-shape-orange shape-small shape-orange rounded-full blur absolute"></div>
