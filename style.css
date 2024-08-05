@@ -104,6 +104,29 @@
   list-style: none;
 }
 
+.link-list a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.link-list a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  transition: width 0.3s;
+}
+
+.link-list a:hover:after {
+  width: 100%;
+}
+
 .h1 {
   font-size: 72px;
   line-height: 84.38px;
@@ -176,28 +199,6 @@
   color: transparent;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-  position: relative;
-}
-
-a::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 1px;
-  background-color: #fff;
-  transition: width 0.3s;
-}
-
-a:hover:after {
-  width: 100%;
-}
-
 .hamburger-menu_label {
   width: max-content;
   cursor: pointer;
@@ -263,6 +264,11 @@ a:hover:after {
 
   .navbar-brand {
     z-index: 999;
+  }
+
+  .navbar-brand:after {
+    content: "";
+    width: 0;
   }
 
   .navbar .link-list {
