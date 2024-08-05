@@ -83,12 +83,6 @@
   background-color: #000;
 }
 
-.button-black:hover {
-  background-color: transparent;
-  border: 1px solid #000;
-  color: #000;
-}
-
 .link-list {
   font-size: 18px;
   display: flex;
@@ -782,6 +776,12 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.newsletter-form_button:hover {
+  background-color: transparent;
+  border: 1px solid #ececec;
+  color: #000;
 }
 
 @media (max-width: 1440px) {
