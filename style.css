@@ -83,12 +83,6 @@
   background-color: #000;
 }
 
-.button-black:hover {
-  background-color: transparent;
-  border: 1px solid #000;
-  color: #000;
-}
-
 .link-list {
   font-size: 18px;
   display: flex;
@@ -102,6 +96,29 @@
 
 .link-list li {
   list-style: none;
+}
+
+.link-list a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.link-list a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  transition: width 0.3s;
+}
+
+.link-list a:hover:after {
+  width: 100%;
 }
 
 .h1 {
@@ -176,28 +193,6 @@
   color: transparent;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-  position: relative;
-}
-
-a::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 1px;
-  background-color: #fff;
-  transition: width 0.3s;
-}
-
-a:hover:after {
-  width: 100%;
-}
-
 .hamburger-menu_label {
   width: max-content;
   cursor: pointer;
@@ -263,6 +258,11 @@ a:hover:after {
 
   .navbar-brand {
     z-index: 999;
+  }
+
+  .navbar-brand:after {
+    content: "";
+    width: 0;
   }
 
   .navbar .link-list {
@@ -776,6 +776,12 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.newsletter-form_button:hover {
+  background-color: transparent;
+  border: 1px solid #ececec;
+  color: #000;
 }
 
 @media (max-width: 1440px) {
