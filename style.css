@@ -24,7 +24,8 @@
 
 @font-face {
   font-family: "Gilroy";
-  src: url(fonts/gilroy/Gilroy-SemiBold.ttf);
+  src: url(fonts/gilroy/Gilroy-Bold.ttf
+  );
   font-weight: 700;
 }
 
@@ -335,8 +336,6 @@ body {
 }
 
 .container {
-  max-width: 1920px;
-  margin: 0 auto;
   color: var(--primary-text-color);
 }
 
